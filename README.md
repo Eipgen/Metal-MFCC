@@ -12,10 +12,10 @@ Metal molecular fractionation with conjugate caps (Metal-MFCC) approach is devel
 
 ## install
 ```
+# suppose you install intelmpi
 module load intel/2023.0.0
 module load intel/impi/2021.8.0
 module load mkl
-
 mpif90  -Wall *.F90 -o metal-mfcc.x
 ```
 ## usage 
@@ -27,6 +27,7 @@ mpif90  -Wall *.F90 -o metal-mfcc.x
 
 ./metal-mfff.x <input
 # you can find results in mfcc.out
+cat mfcc.out
 ```
 
 
